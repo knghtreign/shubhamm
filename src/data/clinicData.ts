@@ -25,6 +25,7 @@ import paediatrics from '../assets/images/paediatric_dental_care_1788595045588.j
 import veneersCrowns from '../assets/images/dental_veneer_crown_1788595062863.jpg';
 import dentalXray from '../assets/images/dental_xray_modern_1788595079091.jpg';
 import dentalBonding from '../assets/images/dental_bonding_macro_1788595094151.jpg';
+import laserGumCare from '../assets/images/laser_gum_care_1789207399394.jpg';
 
 // Clinic image asset paths (bundled by Vite for development & production)
 export const CLINIC_IMAGES = {
@@ -55,6 +56,7 @@ export const CLINIC_IMAGES = {
   veneersCrowns,
   dentalXray,
   dentalBonding,
+  laserGumCare,
 };
 
 export const CLINIC_DETAILS = {
@@ -481,7 +483,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     name: 'Laser Gingivoplasty & Gum Care',
     category: 'PERIODONTICS',
     shortDesc: 'Precise soft-tissue laser contouring for gummy smiles and healthy gum margins.',
-    imageSrc: CLINIC_IMAGES.dentistAction,
+    imageSrc: CLINIC_IMAGES.laserGumCare,
     tag: 'GUM CARE',
     badge: 'Soft-Tissue Laser',
     color: '#D4C4A8',
