@@ -81,8 +81,8 @@ export const CLINIC_DETAILS = {
   landmark: "Pocket A, Kanchanjunga Market, Sector 53",
   plusCode: "H9W6+7X Noida, Uttar Pradesh",
   hours: "Monday – Saturday: 10:00 AM – 8:00 PM · Sunday: By Appointment",
-  mapLink: "https://www.google.com/maps/place/Dr.+Shubham+Arya+Walnut+Dental+%26+Implant+Clinic+%7C%7C+Best+Dental+Clinic+in+Noida+Sector+53,61+%26+Noida/@28.5957198,77.3623891,17z/data=!4m11!1m2!2m1!1swalnut+dentals+dr+shubham!3m7!1s0x390ce5eb2d118fe3:0x7694cc05d5423977!8m2!3d28.5957198!4d77.3623891!10e1!15sChl3YWxudXQgZGVudGFscyBkciBzaHViaGFtWhsiGXdhbG51dCBkZW50YWxzIGRyIHNodWJoYW2SAQ1kZW50YWxfY2xpbmlj4AEA!16s%2Fg%2F11hpz0cf70",
-  googleMapsUrl: "https://www.google.com/maps/place/Dr.+Shubham+Arya+Walnut+Dental+%26+Implant+Clinic+%7C%7C+Best+Dental+Clinic+in+Noida+Sector+53,61+%26+Noida/@28.5957198,77.3623891,17z/data=!4m11!1m2!2m1!1swalnut+dentals+dr+shubham!3m7!1s0x390ce5eb2d118fe3:0x7694cc05d5423977!8m2!3d28.5957198!4d77.3623891!10e1!15sChl3YWxudXQgZGVudGFscyBkciBzaHViaGFtWhsiGXdhbG51dCBkZW50YWxzIGRyIHNodWJoYW2SAQ1kZW50YWxfY2xpbmlj4AEA!16s%2Fg%2F11hpz0cf70",
+  mapLink: "https://maps.app.goo.gl/9ZDzEtPGaV2jui4EA",
+  googleMapsUrl: "https://maps.app.goo.gl/9ZDzEtPGaV2jui4EA",
   amenities: [
     "Wheelchair accessible entrance",
     "LGBTQ+ friendly",

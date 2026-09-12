@@ -5,10 +5,9 @@ import { TextHighlight, PopBadge } from './AnimatedText';
 import { CLINIC_DETAILS } from '../data/clinicData';
 
 export const LocationSection: React.FC = () => {
-  const mapQuery = encodeURIComponent(
-    'Walnut Dental & Implant Clinic, Pocket A, Kanchanjunga Market, Sector 53, Noida, Uttar Pradesh 201307'
-  );
-  const embedUrl = `https://maps.google.com/maps?q=${mapQuery}&t=m&z=16&ie=UTF8&iwloc=&output=embed`;
+  // Exact Google Maps business listing embed for Dr. Shubham Arya Walnut Dental & Implant Clinic
+  const embedUrl =
+    'https://www.google.com/maps/embed?origin=mfe&pb=!1m4!2m1!1sDr.+Shubham+Arya+Walnut+Dental+%26+Implant+Clinic,+Pocket+A,+Kanchanjunga+Market,+Sector+53,+Noida!5e0!6i17';
 
   return (
     <section id="location" className="relative py-8 sm:py-14 -mt-4 sm:-mt-6 px-3 sm:px-8 overflow-hidden z-10">
@@ -38,12 +37,13 @@ export const LocationSection: React.FC = () => {
               Pocket A, Kanchanjunga Market, Sector 53, Noida (Near Sector 61). Convenient parking & accessible location.
             </p>
             <a
+              id="open-google-maps-link"
               href={CLINIC_DETAILS.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-black text-[#C58B1B] hover:text-[#0B1528] transition-colors font-['Outfit',sans-serif]"
+              className="inline-flex items-center gap-1.5 text-xs font-black text-[#C58B1B] hover:text-[#0B1528] bg-amber-50 hover:bg-amber-100/80 px-3 py-1.5 rounded-full border border-amber-300/60 transition-all font-['Outfit',sans-serif] shadow-xs hover:scale-105 active:scale-95"
             >
-              <span>Open in Google Maps</span>
+              <span>Get Directions on Google Maps</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -61,7 +61,7 @@ export const LocationSection: React.FC = () => {
           <div className="relative w-full h-[320px] sm:h-[460px] rounded-[18px] sm:rounded-[28px] overflow-hidden bg-slate-200 shadow-inner">
             <iframe
               id="google-maps-iframe"
-              title="Walnut Dental & Implant Clinic Google Maps Location"
+              title="Dr. Shubham Arya Walnut Dental & Implant Clinic Google Maps Location"
               src={embedUrl}
               width="100%"
               height="100%"
@@ -71,14 +71,31 @@ export const LocationSection: React.FC = () => {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             />
+            {/* Direct floating link badge on map corner */}
+            <a
+              href={CLINIC_DETAILS.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-3 right-3 bg-white/95 hover:bg-white text-[#0B1528] px-3 py-1.5 rounded-full shadow-md text-xs font-bold font-['Outfit',sans-serif] flex items-center gap-1.5 border border-slate-200/90 transition-transform hover:scale-105 active:scale-95 z-10"
+            >
+              <MapPin className="w-3.5 h-3.5 text-amber-600" />
+              <span>Open in Maps</span>
+              <ExternalLink className="w-3 h-3 text-slate-500" />
+            </a>
           </div>
 
           {/* Quick Info Bar below map */}
           <div className="mt-3.5 px-2 flex flex-col sm:flex-row items-center justify-between gap-3 text-white">
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-300">
-              <MapPin className="w-4 h-4 text-[#FDE68A] shrink-0" />
+            <a
+              href={CLINIC_DETAILS.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 text-xs font-semibold text-slate-300 hover:text-white transition-colors"
+            >
+              <MapPin className="w-4 h-4 text-[#FDE68A] shrink-0 group-hover:scale-110 transition-transform" />
               <span>Pocket A, Kanchanjunga Market, Sector 53, Noida 201307</span>
-            </div>
+              <span className="text-[#FDE68A] text-[11px] underline underline-offset-2">Directions →</span>
+            </a>
             <div className="flex items-center gap-3">
               <a
                 href={`tel:${CLINIC_DETAILS.phoneClean}`}

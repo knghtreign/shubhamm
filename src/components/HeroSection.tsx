@@ -164,20 +164,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
               </motion.div>
 
               {/* Location Badge Pill */}
-              <motion.div
+              <motion.a
+                href="https://maps.app.goo.gl/9ZDzEtPGaV2jui4EA"
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{ delay: 0.35, type: 'spring', damping: 14 }}
-                className="bg-white/20 backdrop-blur-md px-3.5 py-2.5 sm:py-3 rounded-[20px] sm:rounded-2xl border border-white/40 text-xs font-semibold text-white space-y-0.5 shadow-xs"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
+                className="bg-white/20 hover:bg-white/30 transition-all backdrop-blur-md px-3.5 py-2.5 sm:py-3 rounded-[20px] sm:rounded-2xl border border-white/40 text-xs font-semibold text-white space-y-0.5 shadow-xs cursor-pointer group"
+                title="Open Walnut Dental Clinic on Google Maps"
               >
-                <div className="text-[#FDE68A] font-black text-[11px] sm:text-xs">
-                  Sector 53, Noida
+                <div className="text-[#FDE68A] font-black text-[11px] sm:text-xs flex items-center justify-between gap-1.5">
+                  <span>Sector 53, Noida</span>
+                  <span className="text-[10px] text-white/80 group-hover:text-white group-hover:translate-x-0.5 transition-transform">↗</span>
                 </div>
                 <div className="text-blue-100 text-[10px] sm:text-[11px] font-medium">
                   Pocket A, Kanchanjunga Market
                 </div>
-              </motion.div>
+              </motion.a>
             </div>
 
             {/* Interactive Worker Message Toast */}
