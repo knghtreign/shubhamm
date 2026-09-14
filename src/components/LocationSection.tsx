@@ -61,7 +61,7 @@ export const LocationSection: React.FC = () => {
           <div className="relative w-full h-[320px] sm:h-[460px] rounded-[18px] sm:rounded-[28px] overflow-hidden bg-slate-200 shadow-inner">
             <iframe
               id="google-maps-iframe"
-              title="Dr. Shubham Arya Walnut Dental & Implant Clinic Google Maps Location"
+              title="Walnut Dental & Implant Clinic Google Maps Location"
               src={embedUrl}
               width="100%"
               height="100%"

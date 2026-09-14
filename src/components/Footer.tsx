@@ -112,7 +112,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                   <Sparkles className="w-4 h-4 text-[#0B1528]" />
                 </motion.div>
                 <span className="text-xl font-extrabold text-white font-['Outfit',sans-serif] tracking-wider uppercase">
-                  WALNUT DENTAL · <span className="text-[#FDE68A]">DR. SHUBHAM ARYA</span>
+                  WALNUT DENTAL <span className="text-[#FDE68A]">& IMPLANT CLINIC</span>
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-blue-50 leading-relaxed max-w-sm font-medium">

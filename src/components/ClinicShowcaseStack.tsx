@@ -295,7 +295,7 @@ export const ClinicShowcaseStack: React.FC = () => {
           <div className="mt-4 flex items-center justify-center gap-2">
             <span className="inline-flex items-center gap-2 text-[#293549] text-xs font-bold font-['Outfit',sans-serif] bg-amber-100/70 border border-amber-300/60 px-4 py-2 rounded-full shadow-xs">
               <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-              <span>Dr. Shubham Arya Walnut Dental & Implant Clinic · Sector 53, Noida</span>
+              <span>Walnut Dental & Implant Clinic · Sector 53, Noida</span>
             </span>
           </div>
         )}

@@ -54,7 +54,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
               🦷
             </div>
             <span className="font-black text-xs sm:text-base tracking-widest uppercase font-['Outfit',sans-serif] text-white">
-              WALNUT DENTAL · <span className="text-[#FDE68A]">DR. SHUBHAM ARYA</span>
+              WALNUT DENTAL <span className="text-[#FDE68A]">& IMPLANT CLINIC</span>
             </span>
           </div>
 

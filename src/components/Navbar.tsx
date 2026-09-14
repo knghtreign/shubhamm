@@ -48,7 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </div>
             <div className="text-left min-w-0">
               <span className="block text-[11px] sm:text-xs tracking-widest uppercase font-black text-[#293549] font-['Outfit',sans-serif] truncate">
-                WALNUT DENTAL · <span className="text-[#C58B1B]">DR. SHUBHAM ARYA</span>
+                WALNUT DENTAL <span className="text-[#C58B1B]">& IMPLANT CLINIC</span>
               </span>
               <span className="hidden sm:block text-[10px] text-slate-500 font-bold tracking-tight truncate">
                 Sector 53, Noida · 5.0 ★ (177 Google reviews)

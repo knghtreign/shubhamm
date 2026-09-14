@@ -60,9 +60,9 @@ export const CLINIC_IMAGES = {
 };
 
 export const CLINIC_DETAILS = {
-  name: "Dr. Shubham Arya Walnut Dental & Implant Clinic",
+  name: "Walnut Dental & Implant Clinic",
   shortName: "Walnut Dental & Implant Clinic",
-  hindiName: "डॉ. शुभम आर्य वॉलनट डेंटल & इंप्लांट क्लिनिक",
+  hindiName: "वॉलनट डेंटल & इंप्लांट क्लिनिक",
   doctor: "Dr. Shubham Arya",
   degree: "BDS, MDS (Orthodontics and Dentofacial Orthopaedics)",
   cert: "Certified Implantologist",
